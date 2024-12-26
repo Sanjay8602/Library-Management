@@ -21,3 +21,10 @@ class Library:
         if not self.books[isbn].is_available:
             raise ValueError("Book is currently unavailable.")
         self.books[isbn].is_available = False
+        
+    def return_book(self, isbn):
+        if isbn not in self.books:
+            raise ValueError("Book not found in the library.")
+        if self.books[isbn].is_available:
+            raise ValueError("Book was not borrowed.")
+        self.books[isbn].is_available = True
