@@ -28,3 +28,13 @@ This is a Python-based Library Management System that allows users to:
 
 ## To run the test:
     python -m unittest test_library.py
+
+
+## Example of running test case:
+    python -m unittest test_library.py
+>>
+.......
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK
